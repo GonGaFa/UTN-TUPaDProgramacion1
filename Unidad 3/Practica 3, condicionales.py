@@ -112,3 +112,28 @@ else: print("Error al procesar la magnitud, pruebe de vuelta")
 
 #Ejercicio 10
 
+hemisferio = input("Ingrese si se encuentra en el hemisferio norte (N) o sur (S): ").upper()
+mes = input("Ingrese si en que mes se encuentra (Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic): ").upper()
+dia = int(input("Ingrese el dia del mes (1-31): "))
+
+if hemisferio == "N":
+
+    if (mes == "MAR" and dia >= 21) or (mes == "ABR") or (mes == "MAY") or (mes == "JUN" and dia <= 20):
+        print("Usted se encuentra en primavera")
+    elif (mes == "JUN" and dia >=21) or (mes == "JUL") or (mes == "AGO") or (mes == "SEP" and dia <= 20):
+        print("Usted se encuentra en verano")
+    elif (mes == "SEP" and dia >= 21) or (mes == "OCT") or (mes == "NOV" ) or (mes == "DIC" and dia <= 20):
+        print("Usted se encuentra en otoño")
+    elif (mes == "DIC" and dia >= 21) or (mes == "ENE") or (mes == "FEB") or (mes == "MAR" and dia <= 20):
+        print("Usted se encuentra en invierno")
+elif hemisferio == "S":
+
+    if (mes == "MAR" and dia >= 21) or (mes == "ABR") or (mes == "MAY") or (mes == "JUN" and dia <= 20):
+        print("Usted se encuentra en otoño")
+    elif (mes == "JUN" and dia >=21) or (mes == "JUL") or (mes == "AGO") or (mes == "SEP" and dia <= 20):
+        print("Usted se encuentra en invierno")
+    elif (mes == "SEP" and dia >= 21) or (mes == "OCT") or (mes == "NOV" ) or (mes == "DIC" and dia <= 20):
+        print("Usted se encuentra en primavera")
+    elif (mes == "DIC" and dia >= 21) or (mes == "ENE") or (mes == "FEB") or (mes == "MAR" and dia <= 20):
+        print("Usted se encuentra en verano")
+else: print("No se pudo encontrar su hemisferio correcto, fijese por la ventana")
