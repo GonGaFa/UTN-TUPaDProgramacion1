@@ -23,7 +23,7 @@ else: print("Error al cargar la nota")
 
 #Ejercicio 3
 
-par = int(input(print("Ingrese un numero: ")))
+par = int(input("Ingrese un numero: "))
 
 if par%2 == 0:
     print("Su numero es par")
@@ -45,7 +45,7 @@ else: print("La edad no es correcta")
 
 #Ejercicio 5
 
-contra = (input(print("Ingrese una contraseña de 8 a 14 caracteres: ")))
+contra = (input("Ingrese una contraseña de 8 a 14 caracteres: "))
 
 if (len(contra)>=8 and len(contra)<=14):
     print("Ha ingresado una contraseña correcta")
@@ -67,4 +67,48 @@ elif mean(numeros_aleatorios) < median(numeros_aleatorios) and median(numeros_al
 
 elif mean(numeros_aleatorios) == median(numeros_aleatorios) and median(numeros_aleatorios) == mode(numeros_aleatorios):
     print("No hay un sesgo")
+
+#Ejercicio 7
+
+palabra = input("Ingrese una palabra: ")
+
+L = palabra[-1].lower()
+
+if L in "aeiou":
+    print(palabra, "!")
+else:
+    print(palabra)
+
+#Ejercicio 8
+
+nombre = input("Ingrese su nombre: ")
+
+opcion = int(input("Ingrese 1 si quiere que su nombre este en mayus, 2 si quiere que su nombre sea en minusculas o 3 si quiere que su nombre empiece con mayuscula"))
+
+if opcion == 1:
+    print(nombre.upper())
+elif opcion == 2:
+    print(nombre.lower())
+elif opcion == 3:
+    print(nombre.title())   
+
+#Ejercicio 9
+
+magnitud = float(input("ingrese el tipo de magnitud del terremoto: "))
+
+if magnitud < 3:
+    print("Muy leve")
+elif magnitud >= 3 and magnitud <4:
+    print("Leve")
+elif magnitud >= 4 and magnitud <5:
+    print("Moderado")
+elif magnitud >= 5 and magnitud <6:
+    print("Fuerte")
+elif magnitud >= 6 and magnitud <7:
+    print("Muy fuerte")
+elif magnitud >= 7:
+    print("Extramo")
+else: print("Error al procesar la magnitud, pruebe de vuelta")
+
+#Ejercicio 10
 
