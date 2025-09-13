@@ -1,10 +1,18 @@
-#ejercicio 3
-"Escribe un programa que sume todos los números enteros comprendidos entre dos valores dados por el usuario, excluyendo esos dos valores."
+#Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
+#número entero positivo indicado por el usuario
 
-numero_max= int(input("Ingrese un numero: "))
+num2 = int(input("Ingrese un numero: "))
+suma = 0
 
-numero_min = int(input("Ingrese otro numero: "))
+if 0 > num2: #El programa determina cual numero es mayor y designa asi un mayor y un menor
+    max_num = 0
+    min_num = num2 
+elif num2 > 0:
+    max_num = num2 
+    min_num = 0
+" "
+for i in range (min_num, max_num): #Es una sucesion de los pasos
 
-for i in range (numero_min, numero_max):
-    if numero_min == numero_min:
-        print("la sumatoria de todos numero es" )
+    suma += i
+
+print(suma)
