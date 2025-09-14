@@ -1,18 +1,12 @@
-#Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
-#número entero positivo indicado por el usuario
+#Escribe un programa que invierta el orden de los dígitos de un número ingresado por el usuario. 
+# Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
 
-num2 = int(input("Ingrese un numero: "))
-suma = 0
+num8 = int(input(print("Ingrese un numero: ")))
+num_inverso = 0
 
-if 0 > num2: #El programa determina cual numero es mayor y designa asi un mayor y un menor
-    max_num = 0
-    min_num = num2 
-elif num2 > 0:
-    max_num = num2 
-    min_num = 0
-" "
-for i in range (min_num, max_num): #Es una sucesion de los pasos
+while num8 > 0:
+    ult_num = num8 % 10       
+    num_inverso = num_inverso * 10 + ult_num
+    num8 //= 10                 
 
-    suma += i
-
-print(suma)
+print("Número invertido:", num_inverso)

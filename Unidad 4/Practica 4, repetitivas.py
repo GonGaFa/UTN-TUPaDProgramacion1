@@ -36,14 +36,14 @@ print(suma)
 
 sum = 0
 ERROR = 0
-num = int(input(print("Ingrese un numero: ")))
+num4 = int(input(print("Ingrese un numero: ")))
 
-while num != ERROR:
+while num4 != ERROR:
     
-    sum += num
+    sum += num4
     print(sum)
 
-    num = int(input(print("Ingrese otro numero o toque 0 para finalizar: ")))
+    num4 = int(input(print("Ingrese otro numero o toque 0 para finalizar: ")))
 
 print("Gracias por participar")
 
@@ -53,12 +53,12 @@ import random
 intentos = 0
 
 print("Bienvenido a la ruleta rusa, intentaremos adivinar un numero del 0 al 9")
-num = int(input(print("Por favor, ingrese un numero: ")))
+num5 = int(input(print("Por favor, ingrese un numero: ")))
 
-while num != random.randrange(0,9):
+while num5 != random.randrange(0,9):
     print("Lo siento, intenta de vuelta")
     intentos += 1
-    num = int(input(print("Por favor, ingrese un numero: ")))
+    num5 = int(input(print("Por favor, ingrese un numero: ")))
 
 print ("felicidades, solo te tomo ", intentos, " intentos conseguirlo")
 
@@ -69,3 +69,55 @@ for i in range(100, -1, -1):
 
 #Ejercicio 7
 
+num3 = int(input("Ingrese un numero: "))
+suma1 = 0
+min_num1 = 0
+if 0 > num3: #El programa determina cual numero es mayor y designa asi un mayor y un menor
+    print("Usted ha elegido un numero no positivo, elija otro por favor")
+
+elif num2 > 0:
+    max_num1 = num3
+    min_num1 = 0
+    
+for i in range (min_num1, max_num1): #Es una sucesion de los pasos
+
+    suma1 += i
+
+print(suma1)
+
+#Ejercicio 8
+
+num_impar = 0
+num_par = 0
+contador = 0
+num6 = int(input(print("Ingrese un numero")))
+
+while contador != 10: #Cambiar el diferencial de contador a 100
+
+    if num6 % 2 == 0:
+        num_par += 1
+    elif num6 % 2 != 0:
+        num_impar += 1
+    contador += 1
+    num6 = int(input(print("Ingrese otro numero: ")))
+
+print ("La cantidad de numero pares ingresados es de ", num_par, ". La cantidad de numeros impares es de ", num_impar)
+
+
+#Ejercicio 9
+
+contador = 0
+num7 =int(input(print("Ingrese un numero")))
+media = 0
+suma = 0
+while contador != 5: #Cambiar diferencual a 100
+
+    suma += num7
+    num7 = int(input(print("Ingrese otro numero: ")))
+    contador += 1
+
+media = suma/contador
+
+print ("La cantidad de numero pares ingresados es de la media entre los numeros es de ", media)
+
+#Ejercicio 10
