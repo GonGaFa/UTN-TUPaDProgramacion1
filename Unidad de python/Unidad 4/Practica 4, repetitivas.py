@@ -121,3 +121,13 @@ media = suma/contador
 print ("La cantidad de numero pares ingresados es de la media entre los numeros es de ", media)
 
 #Ejercicio 10
+
+num8 = int(input(print("Ingrese un numero: ")))
+num_inverso = 0
+
+while num8 > 0:
+    ult_num = num8 % 10       
+    num_inverso = num_inverso * 10 + ult_num
+    num8 //= 10                 
+
+print("Número invertido:", num_inverso)
