@@ -30,7 +30,7 @@ for i in range (min_num+1, max_num): #Es una sucesion de los pasos
 
     suma += i
 
-print(suma)
+print("La suma es: ", suma)
 
 #Ejercicio 4
 
