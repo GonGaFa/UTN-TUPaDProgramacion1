@@ -125,6 +125,10 @@ print ("La cantidad de numero pares ingresados es de la media entre los numeros 
 num8 = int(input(print("Ingrese un numero: ")))
 num_inverso = 0
 
+while num8 < 0:
+    print("El numero debe ser positivo, ingrese otro por favor")
+    num8 = int(input(print("Ingrese un numero: ")))
+
 while num8 > 0:
     ult_num = num8 % 10       
     num_inverso = num_inverso * 10 + ult_num
