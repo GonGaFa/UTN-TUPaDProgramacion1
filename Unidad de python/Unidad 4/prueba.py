@@ -1,12 +1,16 @@
-#Escribe un programa que invierta el orden de los dígitos de un número ingresado por el usuario. 
-# Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+num3 = int(input(print("Ingrese un numero: ")))
+suma1 = 0
+min_num1 = 0
 
-num8 = int(input(print("Ingrese un numero: ")))
-num_inverso = 0
+if 0 > num3: #El programa determina cual numero es mayor y designa asi un mayor y un menor
+    print("Usted ha elegido un numero no positivo, elija otro por favor")
 
-while num8 > 0:
-    ult_num = num8 % 10       
-    num_inverso = num_inverso * 10 + ult_num
-    num8 //= 10                 
+elif num3 > 0:
+    max_num1 = num3
+    min_num1 = 0
+    
+for i in range (min_num1, max_num1): #Es una sucesion de los pasos
 
-print("Número invertido:", num_inverso)
+    suma1 += i
+
+print(suma1)

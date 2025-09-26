@@ -69,13 +69,14 @@ for i in range(100, -1, -1):
 
 #Ejercicio 7
 
-num3 = int(input("Ingrese un numero: "))
-suma1 = 0
+num3 = int(input(print("Ingrese un numero: ")))
+suma3 = 0
 min_num1 = 0
+
 if 0 > num3: #El programa determina cual numero es mayor y designa asi un mayor y un menor
     print("Usted ha elegido un numero no positivo, elija otro por favor")
 
-elif num2 > 0:
+elif num3 > 0:
     max_num1 = num3
     min_num1 = 0
     
