@@ -30,7 +30,7 @@ for i in range (min_num+1, max_num): #Es una sucesion de los pasos
 
     suma += i
 
-print(suma)
+print("La suma es: ", suma)
 
 #Ejercicio 4
 
@@ -125,6 +125,10 @@ print ("La cantidad de numero pares ingresados es de la media entre los numeros 
 
 num8 = int(input(print("Ingrese un numero: ")))
 num_inverso = 0
+
+while num8 < 0:
+    print("El numero debe ser positivo, ingrese otro por favor")
+    num8 = int(input(print("Ingrese un numero: ")))
 
 while num8 > 0:
     ult_num = num8 % 10       
