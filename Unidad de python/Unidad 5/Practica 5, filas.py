@@ -9,6 +9,7 @@ print("El promedio es: ", promedio)
 
 #Ejercicio 2
 
+<<<<<<< Updated upstream
 elementos = []
 
 for i in range(5):
@@ -31,7 +32,30 @@ if delete == "SI":
     print("La lista actualizada es: ", elementos)
 else:
     print("Perfecto entonces, que tenga un muy buen dia")
+=======
+contador = []
+word = str(input("Ingrese una palabra:"))
+contador.append(word)
+>>>>>>> Stashed changes
 
+while len(contador) < 5:
+    word = str(input("Ingrese otra palabra:"))
+    contador.append(word)
+
+contador.sort()
+
+print(contador)
+
+borra = input("Desea eliminar una palabra? (Si/No): ").upper()
+
+if borra == "SI":
+    num_borrado = str(input("Que palabra desea borrar?: "))
+    if num_borrado in contador:
+        contador.remove(num_borrado)
+        print("Palabra borrada", contador)
+    else: print("Ese dato no esta en la lista") 
+elif borra == "NO":
+    print(contador)
 
 #Ejercicio 3
 
